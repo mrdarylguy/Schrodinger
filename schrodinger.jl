@@ -12,20 +12,19 @@ L = 20
 n = 3
 x = 0:0.1:L
 y = ψ.(x,n,L)
+y_square = y.^2
 
-
-p1 = (x, 
-      y,
-      w=3,
-      label="probability amplitude: ψ(x, $n, $L)",
-      xlabel="x",
-      ylabel="ψ",
-      ylim = (-1, 1),
-      show = true
+plot(x, 
+     y,
+     w=3,
+     label="probability amplitude: ψ(x, $n, $L)",
+     xlabel="x",
+     ylabel="ψ",
+     ylim = (-1, 1),
 )
 
 p2 = (x, 
-      y.^2,
+      y_square,
       w=3,
       label="probability distribution: ψ^2(x, $n, $L)",
       xlabel="x",
