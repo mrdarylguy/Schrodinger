@@ -23,7 +23,7 @@ p1 = (x,
 )
 
 p2 = (x, 
-      y.^2,
+      y^2,
       w=3,
       label="probability distribution: ψ^2(x, $n, $L)",
       xlabel="x",
