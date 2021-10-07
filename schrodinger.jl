@@ -20,7 +20,8 @@ p1 = (x,
       label="probability amplitude: ψ(x, $n, $L)",
       xlabel="x",
       ylabel="ψ",
-      ylim = (-1, 1)
+      ylim = (-1, 1),
+      show = true
 )
 
 p2 = (x, 
@@ -34,7 +35,8 @@ p2 = (x,
 
 
 #display both plots
-plot(p1, p2, layout=(1,2), legend=:bottomright, legendfontsize=7)
+
+# plot(p1, p2, layout=(1,2), legend=:bottomright, legendfontsize=7)
 
 
 #Using the Gauss Konrod Integration algorithm
