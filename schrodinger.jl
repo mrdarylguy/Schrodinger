@@ -14,28 +14,27 @@ x = 0:0.1:L
 y = ψ.(x,n,L)
 y_square = y.^2
 
-plot(x, 
-     y,
-     w=3,
-     label="probability amplitude: ψ(x, $n, $L)",
-     xlabel="x",
-     ylabel="ψ",
-     ylim = (-1, 1),
-)
+p1 = plot(x, 
+          y,
+          w=3,
+          label="probability amplitude: ψ(x, $n, $L)",
+          xlabel="x",
+          ylabel="ψ",
+          ylim = (-1, 1)
+          );
 
-p2 = (x, 
-      y_square,
-      w=3,
-      label="probability distribution: ψ^2(x, $n, $L)",
-      xlabel="x",
-      ylabel="ψ^2",
-      ylim=(-1, 1)
-)
+p2 = plot(x, 
+          y_square,
+          w=3,
+          label="probability distribution: ψ^2(x, $n, $L)", 
+          xlabel="x",
+          ylabel="ψ^2",
+          ylim=(-1, 1)
+          );
 
 
 #display both plots
-
-# plot(p1, p2, layout=(1,2), legend=:bottomright, legendfontsize=7)
+plot(p1, p2, layout=(1,2), legend=:bottomright, legendfontsize=7)
 
 
 #Using the Gauss Konrod Integration algorithm
