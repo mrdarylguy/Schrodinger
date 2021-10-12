@@ -1,0 +1,8 @@
+name: schrodinger
+channels:
+- defaults
+- Julia 1.6
+dependencies:
+- Plots = 1.22.4
+- QuadGK = 2.4.2
+ 
